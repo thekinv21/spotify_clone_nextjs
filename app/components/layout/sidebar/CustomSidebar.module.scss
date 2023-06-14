@@ -1,0 +1,68 @@
+@import '@/styles/responsive.scss';
+
+.container {
+	@apply flex h-full;
+}
+
+.content {
+	@apply hidden w-[300px] flex-col gap-y-2 bg-dark-black p-2;
+}
+
+//?=======NAVİGATİON COMPONENT STYLESs
+
+.navigationContainer {
+	@apply h-fit w-full rounded-lg bg-black text-gray;
+}
+
+.navigation_content {
+	@apply flex flex-col gap-y-4 px-5 py-4;
+}
+
+.navigationLink {
+	@apply flex h-auto w-full cursor-pointer flex-row items-center gap-x-4 text-sm font-medium hover:text-white;
+}
+
+.navigationLinkActive {
+	@apply flex h-auto w-full cursor-pointer flex-row items-center gap-x-4 text-sm font-medium text-white;
+}
+
+//?========LİBRARY COMPONENT STYLES
+
+.library_container {
+	@apply h-full w-full overflow-y-auto rounded-lg bg-black text-white;
+}
+
+.library_content {
+	@apply flex flex-col;
+}
+
+.library_content_block {
+	@apply flex items-center justify-between px-5 pt-4;
+}
+
+.library_content_block_items {
+	@apply inline-flex cursor-pointer items-center gap-x-2 text-gray hover:text-white;
+
+	> p {
+		@apply font-bold uppercase;
+	}
+}
+
+.icon {
+	@apply cursor-pointer text-gray hover:text-white;
+}
+
+.libraryMusicList {
+	@apply mt-5 flex flex-col gap-y-4 px-4 text-sm;
+}
+
+//============MOBİLE İÇİN========
+@include phone {
+}
+
+//============TABLET İÇİN========
+@include tablet {
+	.content {
+		@apply flex;
+	}
+}
