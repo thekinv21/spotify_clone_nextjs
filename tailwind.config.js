@@ -7,9 +7,9 @@ const colors = require('tailwindcss/colors')
 const constants = {
 	green: '#1db954',
 	'dark-green': '#065f46',
-	'dark-black': '#212121',
+	'dark-black': '#121313',
 	indigo: '#1e1b4b',
-	black: '#121212',
+	black: '#000101',
 	white: '#ffffff',
 	'dark-gray': '#535353',
 	gray: '#b3b3b3'
@@ -30,7 +30,7 @@ module.exports = withMT({
 		},
 		extend: {
 			fontSize: {
-				xs: '0.82rem',
+				xs: '0.75rem',
 				sm: '0.98rem',
 				base: '1.15rem',
 				lg: '1.22rem',
