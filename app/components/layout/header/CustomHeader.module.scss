@@ -1,0 +1,56 @@
+@import '@/styles/responsive.scss';
+
+.header {
+	@apply h-fit bg-gradient-to-b from-indigo p-8;
+}
+
+.header_content {
+	@apply mb-4 flex w-full items-center justify-between;
+}
+
+.header_item {
+	@apply hidden items-center gap-x-2;
+}
+
+.header_icon_button {
+	@apply flex items-center justify-center rounded-full bg-black transition-all duration-500 ease-out hover:bg-gray;
+}
+
+.header_mobile_icon {
+	@apply flex items-center gap-x-2;
+}
+
+.home_icon_button {
+	@apply items-center justify-center rounded-full bg-white p-2 text-black transition-all duration-300 ease-out hover:opacity-80;
+}
+
+.defaultFlex {
+	@apply flex items-center justify-between gap-x-8;
+}
+
+.premium_button {
+	@apply rounded-2xl bg-white px-4 py-2 text-xs font-semibold text-black transition duration-300 hover:scale-105 hover:opacity-90;
+}
+
+.header_user_icon_button {
+	@apply mr-3 items-center justify-center rounded-full bg-black p-2 text-white transition-all duration-300 ease-in hover:scale-90 hover:bg-white hover:text-black;
+}
+
+.menuList {
+	@apply rounded-lg border-0 bg-transparent py-3 text-white;
+}
+
+//============MOBİLE İÇİN========
+@include phone {
+}
+
+//============TABLET İÇİN========
+@include tablet {
+	.header_item {
+		@apply flex;
+	}
+
+	.header_mobile_icon {
+		@apply hidden;
+	}
+}
