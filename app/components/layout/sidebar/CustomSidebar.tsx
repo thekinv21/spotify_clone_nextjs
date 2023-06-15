@@ -1,7 +1,5 @@
 import { FC } from 'react'
 
-import CustomFooter from '../footer/CustomFooter'
-import CustomHeader from '../header/CustomHeader'
 import styles from './CustomSidebar.module.scss'
 import CustomLibrary from './library/CustomLibrary'
 import CustomNavigation from './navigation/CustomNavigation'
