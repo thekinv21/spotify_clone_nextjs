@@ -26,12 +26,6 @@ const CustomSidebar: FC<ISiderbarProps> = ({ children }) => {
 				</CustomNavigation>
 				<CustomLibrary>Song Library</CustomLibrary>
 			</section>
-
-			<section>
-				<CustomHeader />
-				<main>{children}</main>
-				<CustomFooter />
-			</section>
 		</section>
 	)
 }
