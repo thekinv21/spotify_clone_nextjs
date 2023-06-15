@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
+const withMT = require('@material-tailwind/react/utils/withMT')
+
 const colors = require('tailwindcss/colors')
 
 const constants = {
@@ -13,11 +15,13 @@ const constants = {
 	gray: '#b3b3b3'
 }
 
-module.exports = {
+module.exports = withMT({
 	content: [
 		'./src/pages/**/*.{js,ts,jsx,tsx,mdx}',
 		'./src/components/**/*.{js,ts,jsx,tsx,mdx}',
-		'./src/app/**/*.{js,ts,jsx,tsx,mdx}'
+		'./src/app/**/*.{js,ts,jsx,tsx,mdx}',
+		'path-to-your-node_modules/@material-tailwind/react/components/**/*.{js,ts,jsx,tsx}',
+		'path-to-your-node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}'
 	],
 	theme: {
 		colors: {
@@ -49,4 +53,4 @@ module.exports = {
 		}
 	},
 	plugins: []
-}
+})
