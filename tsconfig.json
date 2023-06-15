@@ -24,7 +24,8 @@
 			"@/utils/*": ["./app/utils/*"],
 			"@/assets/*": ["./app/assets/*"],
 			"@/types/*": ["./app/types/*"],
-			"@/imports/*": ["./app/imports/*"]
+			"@/imports/*": ["./app/imports/*"],
+			"@/constants/*": ["./app/constants/*"]
 		},
 		"plugins": [
 			{
