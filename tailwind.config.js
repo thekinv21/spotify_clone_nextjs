@@ -4,7 +4,9 @@ const colors = require('tailwindcss/colors')
 
 const constants = {
 	green: '#1db954',
+	'dark-green': '#065f46',
 	'dark-black': '#212121',
+	indigo: '#1e1b4b',
 	black: '#121212',
 	white: '#ffffff',
 	'dark-gray': '#535353',
