@@ -1,5 +1,5 @@
 import { useRouter } from 'next/navigation'
-import { FC } from 'react'
+import React, { FC } from 'react'
 import { BiSearch } from 'react-icons/bi'
 import { HiHome } from 'react-icons/hi'
 import { RxCaretLeft, RxCaretRight } from 'react-icons/rx'
@@ -10,7 +10,12 @@ import styles from './CustomHeader.module.scss'
 import CustomDrawer from './drawer/CustomDrawer'
 import CustomMenu from './menu/CustomMenu'
 
-const CustomHeader: FC = () => {
+interface ICustomHeaderProps {
+	children: React.ReactNode
+	className?: string
+}
+
+const CustomHeader: FC<ICustomHeaderProps> = ({ children, className }) => {
 	const router = useRouter()
 
 	const handleLogout = () => {
