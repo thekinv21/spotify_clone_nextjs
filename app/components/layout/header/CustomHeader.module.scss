@@ -1,7 +1,7 @@
 @import '@/styles/responsive.scss';
 
 .header {
-	@apply h-fit bg-gradient-to-b from-indigo p-8;
+	@apply sticky left-0 top-0 z-50 h-fit bg-gradient-to-b from-indigo p-8;
 }
 
 .header_content {
@@ -37,7 +37,11 @@
 }
 
 .menuList {
-	@apply rounded-lg border-0 bg-transparent py-3 text-white;
+	@apply rounded-lg border-0 bg-black py-3 text-white;
+}
+
+.header_children {
+	@apply py-10;
 }
 
 //============MOBİLE İÇİN========
