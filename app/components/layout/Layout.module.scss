@@ -7,3 +7,7 @@
 .main {
 	@apply h-full w-full overflow-hidden overflow-y-auto rounded-lg bg-black;
 }
+
+.main_content {
+	@apply px-10 py-5;
+}
