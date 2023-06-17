@@ -1,4 +1,4 @@
-import { menuLinks } from '@/constants/CustomLink'
+import { menuLinks } from '@/constants/links'
 import { Menu, MenuHandler, MenuList } from '@material-tailwind/react'
 import { FC } from 'react'
 import { SlUser } from 'react-icons/sl'

@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { SlUser } from 'react-icons/sl'
 
-import CustomButton from '@/ui/CustomButton'
+import CustomButton from '@/ui/spotify_custom_button/CustomButton'
 
 import styles from './CustomDrawer.module.scss'
 

@@ -4,7 +4,7 @@ import { BiSearch } from 'react-icons/bi'
 import { HiHome } from 'react-icons/hi'
 import { RxCaretLeft, RxCaretRight } from 'react-icons/rx'
 
-import CustomButton from '@/ui/CustomButton'
+import CustomButton from '@/ui/spotify_custom_button/CustomButton'
 
 import styles from './CustomHeader.module.scss'
 import CustomDrawer from './drawer/CustomDrawer'
