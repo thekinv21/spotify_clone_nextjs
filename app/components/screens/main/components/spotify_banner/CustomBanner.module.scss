@@ -1,0 +1,72 @@
+@import '@/styles/responsive.scss';
+
+// spotify banner styles start
+.mainBanner {
+	@apply w-full;
+
+	> h1 {
+		@apply text-2xl font-semibold text-white;
+	}
+}
+
+.mainBanner_grid_container {
+	@apply mt-5 grid grid-cols-1 gap-6;
+}
+
+.container {
+	@apply relative flex items-center gap-x-4 overflow-hidden rounded-md bg-dark-black pr-4 transition duration-300;
+
+	&:hover {
+		@apply scale-105;
+
+		.play_icon {
+			@apply flex  transition-all duration-300;
+		}
+	}
+}
+
+.content {
+	@apply relative min-h-[64px] min-w-[74px];
+}
+
+.title {
+	@apply truncate py-5  text-sm font-medium text-white;
+}
+
+.circle {
+	@apply flex h-14 w-14 scale-90 items-center justify-center rounded-full bg-green;
+}
+
+.play_icon {
+	@apply absolute right-4 hidden;
+}
+
+// spotify banner styles end
+
+//============MOBİLE İÇİN========
+@include phone {
+	.mainBanner_grid_container {
+		@apply grid-cols-1;
+	}
+}
+
+//============TABLET İÇİN========
+@include tablet {
+	.mainBanner_grid_container {
+		@apply grid-cols-2;
+	}
+}
+
+//============LAPTOP İÇİN========
+@include laptop {
+	.mainBanner_grid_container {
+		@apply grid-cols-3;
+	}
+}
+
+//============DESKTOP İÇİN========
+@include desktop {
+	.mainBanner_grid_container {
+		@apply grid-cols-4;
+	}
+}
