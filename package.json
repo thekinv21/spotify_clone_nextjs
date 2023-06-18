@@ -16,9 +16,11 @@
     "@types/node": "20.3.1",
     "@types/react": "18.2.12",
     "@types/react-dom": "18.2.5",
+    "@types/spotify-web-api-node": "^5.0.7",
     "autoprefixer": "10.4.14",
     "axios": "^1.4.0",
     "next": "13.4.5",
+    "next-auth": "^4.22.1",
     "postcss": "8.4.24",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.3.0",
@@ -29,6 +31,7 @@
     "react-redux": "^8.1.0",
     "react-toastify": "^9.1.3",
     "sass": "^1.63.4",
+    "spotify-web-api-node": "^5.0.2",
     "tailwindcss": "3.3.2",
     "typescript": "5.1.3"
   }

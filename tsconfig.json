@@ -22,12 +22,14 @@
 			"@/layout/*": ["./app/components/layout/*"],
 			"@/hooks/*": ["./app/hooks/*"],
 			"@/utils/*": ["./app/utils/*"],
-			"@/assets/*": ["./app/assets/*"],
+			"@/slices/*": ["./app/slices/*"],
 			"@/types/*": ["./app/types/*"],
 			"@/imports/*": ["./app/imports/*"],
 			"@/constants/*": ["./app/constants/*"],
 			"@/api/*": ["./app/api/*"],
-			"@/provider/*": ["./app/provider/*"]
+			"@/provider/*": ["./app/provider/*"],
+			"@/config/*": ["./app/config/*"],
+			"@/store/*": ["./app/store/*"]
 		},
 		"plugins": [
 			{
