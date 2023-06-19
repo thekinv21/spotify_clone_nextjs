@@ -1,5 +1,7 @@
 import { menuLinks } from '@/constants/links'
 import { Menu, MenuHandler, MenuList } from '@material-tailwind/react'
+import { signOut, useSession } from 'next-auth/react'
+import { useRouter } from 'next/navigation'
 import { FC } from 'react'
 import { SlUser } from 'react-icons/sl'
 
@@ -7,6 +9,9 @@ import styles from '../CustomHeader.module.scss'
 import CustomMenuLink from './CustomMenuLink'
 
 const CustomMenu: FC = () => {
+	const { data: session } = useSession()
+	const router = useRouter()
+
 	return (
 		<>
 			<Menu placement='bottom-start'>
@@ -19,6 +24,19 @@ const CustomMenu: FC = () => {
 					{menuLinks.map((item, idx: number) => (
 						<CustomMenuLink key={idx} {...item} />
 					))}
+
+					{session?.user ? (
+						<button className={styles.header_button} onClick={() => signOut()}>
+							{session.user.name}: Çikiş
+						</button>
+					) : (
+						<button
+							className={styles.header_button}
+							onClick={() => router.push(`/login`)}
+						>
+							Oturum Aç
+						</button>
+					)}
 				</MenuList>
 			</Menu>
 		</>

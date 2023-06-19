@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { FC, useState } from 'react'
 import { LuUsers } from 'react-icons/lu'
 
-import styles from './CustomDrawer.module.scss'
+import styles from '../CustomHeader.module.scss'
 import CustomDrawerContent from './CustomDrawerContent'
 
 const CustomDrawer: FC = () => {
@@ -32,6 +32,8 @@ const CustomDrawer: FC = () => {
 						width={150}
 						className='object-contain'
 						draggable={false}
+						priority
+						sizes='(max-width: 768px) 100%, (max-width: 1200px) 100%, 100%'
 					/>
 
 					<XMarkIcon

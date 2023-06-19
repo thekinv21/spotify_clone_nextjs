@@ -3,7 +3,7 @@ import { SlUser } from 'react-icons/sl'
 
 import CustomButton from '@/ui/spotify_custom_button/CustomButton'
 
-import styles from './CustomDrawer.module.scss'
+import styles from '../CustomHeader.module.scss'
 
 const Sceletion = () => {
 	return (

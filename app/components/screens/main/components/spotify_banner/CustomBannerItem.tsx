@@ -22,10 +22,12 @@ const CustomBannerItem: FC<ICustomBannerItem> = ({ image, name, url }) => {
 			<div className={styles.content}>
 				<Image
 					draggable={false}
-					className='object-cover'
+					className='object-cover w-auto'
 					src={image}
-					fill
+					fill={true}
 					alt='liked playlists'
+					priority
+					sizes='(max-width: 768px) 100%, (max-width: 1200px) 100%, 100%'
 				/>
 			</div>
 			<p className={styles.title}>{name}</p>

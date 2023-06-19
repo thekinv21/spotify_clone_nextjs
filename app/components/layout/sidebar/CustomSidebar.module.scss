@@ -8,7 +8,7 @@
 	@apply hidden w-[300px] flex-col gap-y-2 bg-dark-black p-2;
 }
 
-//?=======NAVİGATİON COMPONENT STYLESs
+//?NAVİGATİON COMPONENT STYLES start
 
 .navigationContainer {
 	@apply h-fit w-full rounded-lg bg-black text-gray;
@@ -26,7 +26,9 @@
 	@apply flex h-auto w-full cursor-pointer flex-row items-center gap-x-4 text-sm font-medium text-white;
 }
 
-//?========LİBRARY COMPONENT STYLES
+//?=================NAVİGATİON COMPONENT STYLES  end==============
+
+//?LİBRARY COMPONENT STYLES start
 
 .library_container {
 	@apply h-full w-full overflow-y-auto rounded-lg bg-black text-white;
@@ -55,6 +57,39 @@
 .libraryMusicList {
 	@apply mt-5 flex flex-col gap-y-4 px-4 text-sm;
 }
+
+//?===================LİBRARY COMPONENT STYLES end=============
+
+//*LİBRARY ITEMS STYLES start
+.library_item_container {
+	@apply flex w-full cursor-pointer items-center gap-x-4 rounded-md p-2;
+
+	&:hover {
+		@apply bg-dark-black transition-all duration-150 ease-in;
+	}
+}
+
+.library_item_image_block {
+	@apply relative min-h-[48px] min-w-[48px] overflow-hidden rounded-md;
+}
+
+.library_item_content {
+	@apply flex flex-col gap-y-1 overflow-hidden;
+
+	> p {
+		@apply truncate text-[13px]  text-white;
+	}
+
+	> div {
+		@apply flex gap-2 text-xs;
+
+		> p {
+			@apply truncate text-white;
+		}
+	}
+}
+
+//*=====================LİBRARY ITEMS STYLES end==================
 
 //============MOBİLE İÇİN========
 @include phone {
