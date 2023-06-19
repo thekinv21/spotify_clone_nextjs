@@ -1,8 +1,8 @@
-import { NextPage } from 'next'
+import { FC } from 'react'
 
 import Login from '@/screens/login/Login'
 
-const LoginPage: NextPage = () => {
+const LoginPage: FC = () => {
 	return <Login />
 }
 

@@ -18,9 +18,9 @@ const LoginForm: FC = () => {
 						autoComplete='off'
 						id='username'
 						type='text'
-						{...register('username', {
-							required: true
-						})}
+						placeholder='Spotify Web api  didn`t support Auth with username '
+						disabled
+						{...register('username')}
 						className={styles.input}
 					/>
 				</div>
@@ -30,16 +30,18 @@ const LoginForm: FC = () => {
 					<input
 						autoComplete='off'
 						id='password'
+						placeholder='Spotify Web api  didn`t support Auth with password '
+						disabled
 						type='password'
-						{...register('password', {
-							required: true
-						})}
+						{...register('password')}
 						className={styles.input}
 					/>
 				</div>
 
 				<div className={styles.form_item}>
-					<button type='submit'>Giriş Yap</button>
+					<button onClick={() => console.log('hey')} type='submit'>
+						Giriş Yap
+					</button>
 				</div>
 
 				<div className={styles.form_item}>

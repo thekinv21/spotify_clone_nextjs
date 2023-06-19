@@ -48,7 +48,7 @@
 	}
 
 	> input {
-		@apply h-11 w-96 rounded-lg border-none bg-dark-black pl-5 text-white outline-none;
+		@apply h-11 w-96 truncate rounded-lg border-none bg-dark-black pl-5 text-xs text-white outline-none;
 	}
 
 	> button {

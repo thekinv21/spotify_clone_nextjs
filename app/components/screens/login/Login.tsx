@@ -23,6 +23,8 @@ const Login: FC = () => {
 							width={250}
 							height={50}
 							draggable={false}
+							priority
+							sizes='(max-width: 768px) 100%, (max-width: 1200px) 100%, 100%'
 						/>
 
 						<CustomButton
