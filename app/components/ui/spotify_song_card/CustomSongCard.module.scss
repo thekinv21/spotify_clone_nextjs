@@ -1,0 +1,35 @@
+.content {
+	@apply mb-5 flex flex-col justify-center gap-2;
+}
+
+.music_card {
+	@apply relative flex w-52 cursor-pointer flex-col items-center justify-center rounded-md bg-dark-black p-4 transition-all duration-200;
+
+	&:hover {
+		@apply scale-105 transition-all duration-200 ease-out;
+
+		.play_icon {
+			@apply flex  transition-all duration-300;
+		}
+	}
+}
+
+.music_text {
+	@apply mt-6 w-full text-start leading-3 text-gray;
+
+	> h2 {
+		@apply mb-3 text-base text-white;
+	}
+
+	> p {
+		@apply truncate text-xs;
+	}
+}
+
+.circle {
+	@apply flex h-14 w-14 scale-90 items-center justify-center rounded-full bg-green;
+}
+
+.play_icon {
+	@apply absolute right-[12%] top-[50%] hidden;
+}
