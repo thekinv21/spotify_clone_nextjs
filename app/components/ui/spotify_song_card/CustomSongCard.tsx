@@ -1,19 +1,14 @@
-import Image from 'next/image'
+import { IFoollowedArtists } from '@/types/IFollowedArtists'
 import { FC } from 'react'
 import { GrPlayFill } from 'react-icons/gr'
 
 import styles from './CustomSongCard.module.scss'
 
-interface ICustomSongCardProps {
-	image: string
-	singer: string
-	description?: string
-}
-
-const CustomSongCard: FC<ICustomSongCardProps> = ({
-	image,
-	singer,
-	description
+const CustomSongCard: FC<IFoollowedArtists> = ({
+	name,
+	images,
+	type,
+	popularity
 }) => {
 	const handleClick = () => {}
 
@@ -22,20 +17,19 @@ const CustomSongCard: FC<ICustomSongCardProps> = ({
 			<div className={styles.content}>
 				<div className={styles.music_card}>
 					<div className={styles.music_image_holder}>
-						<Image
+						<img
 							draggable={false}
-							src={image}
+							src={images ? images[0].url : '/miyagi.jpeg'}
 							alt='music mage'
-							width={200}
-							height={80}
-							className='object-contain rounded-lg'
-							priority
-							sizes='(max-width: 768px) 100%, (max-width: 1200px) 100%, 100%'
+							className={styles.image}
 						/>
 					</div>
 					<div className={styles.music_text}>
-						<h2>{singer}</h2>
-						<p>{description}</p>
+						<h2>{name}</h2>
+						<div>
+							<p>{type.toUpperCase()}</p>
+							<p>Popularity : {popularity}</p>
+						</div>
 					</div>
 
 					<div className={styles.play_icon}>

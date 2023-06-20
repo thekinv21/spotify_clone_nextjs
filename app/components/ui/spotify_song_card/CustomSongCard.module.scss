@@ -1,35 +1,59 @@
+/* Tüm içeriği içeren konteyner */
 .content {
 	@apply mb-5 flex flex-col justify-center gap-2;
 }
 
+/* Müzik kartının container stilleri */
 .music_card {
 	@apply relative flex w-52 cursor-pointer flex-col items-center justify-center rounded-md bg-dark-black p-4 transition-all duration-200;
 
+	/* Üzerine gelindiğindeki style */
 	&:hover {
 		@apply scale-105 transition-all duration-200 ease-out;
 
+		/* hover olduğunda oynatma simgesini göster */
 		.play_icon {
-			@apply flex  transition-all duration-300;
+			@apply flex transition-all duration-300;
 		}
 	}
 }
 
+/* Müzik resmi için konteyner */
+.music_image_holder {
+	@apply max-h-[300px] max-w-[300px];
+}
+
+/* Resim için stil tanımı */
+.image {
+	@apply h-[180px] w-[200px] rounded-lg object-cover;
+}
+
+/* Müzik metni için konteyner */
 .music_text {
 	@apply mt-6 w-full text-start leading-3 text-gray;
 
+	/* Şarkı adı için stil tanımı */
 	> h2 {
-		@apply mb-3 text-base text-white;
+		@apply mb-3 truncate text-sm text-white;
 	}
 
-	> p {
-		@apply truncate text-xs;
+	/* Müzik türleri için stil tanımı */
+	> div {
+		@apply flex items-center
+		justify-between px-1;
+
+		> p {
+			@apply truncate text-[10px];
+		}
 	}
 }
 
+/* Oynatma iconu için style */
 .circle {
 	@apply flex h-14 w-14 scale-90 items-center justify-center rounded-full bg-green;
 }
 
+/* Oynatma simgesi containeri için style */
 .play_icon {
 	@apply absolute right-[12%] top-[50%] hidden;
 }
