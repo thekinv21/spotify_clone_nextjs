@@ -6,6 +6,7 @@ import type { AppProps } from 'next/app'
 import NotificationProvider from '@/provider/NotificationProvider'
 import QueryProviders from '@/provider/QueryProviders'
 import ReduxToolkitProvider from '@/provider/ReduxToolkitProvider'
+import SkeletonProvider from '@/provider/SkeletonProvider'
 
 export default function App({
 	Component,
@@ -16,7 +17,9 @@ export default function App({
 			<ReduxToolkitProvider>
 				<QueryProviders>
 					<ThemeProvider>
-						<Component {...pageProps} />
+						<SkeletonProvider>
+							<Component {...pageProps} />
+						</SkeletonProvider>
 						<NotificationProvider />
 					</ThemeProvider>
 				</QueryProviders>
