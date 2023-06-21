@@ -12,6 +12,8 @@ const scopes = [
 	'user-follow-read',
 	'playlist-read-private',
 	'playlist-read-collaborative',
+	'playlist-modify-public',
+	'playlist-modify-private',
 	'streaming'
 ].join(',')
 
