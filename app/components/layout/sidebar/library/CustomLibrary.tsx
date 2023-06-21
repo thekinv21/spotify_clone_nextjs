@@ -7,6 +7,7 @@ import styles from '../CustomSidebar.module.scss'
 import CreatePlaylistForm from './components/create-playlist-library/CreatePlaylistForm'
 import CustomFollowItem from './components/custom-playlist-item/CustomFollowItem'
 import CustomPlaylistItem from './components/custom-playlist-item/CustomPlaylistItem'
+import CustomSkeletonItem from './components/custom-playlist-item/CustomSkeletonItem'
 import { useCustomLibrary } from './useCustomLibrary'
 
 interface ILibraryProps {
@@ -45,7 +46,7 @@ const CustomLibrary: FC<ILibraryProps> = ({ children }) => {
 							<CustomPlaylistItem key={idx} {...item} />
 						))
 					) : (
-						<p>Herhangi Playlist Yok</p>
+						<CustomSkeletonItem />
 					)}
 
 					{followeds.length ? (
@@ -53,7 +54,7 @@ const CustomLibrary: FC<ILibraryProps> = ({ children }) => {
 							<CustomFollowItem key={idx} {...item} />
 						))
 					) : (
-						<p>Herhangi Playlist Yok</p>
+						<CustomSkeletonItem />
 					)}
 				</section>
 			</section>
