@@ -1,7 +1,6 @@
+import styles from '@/scss/CustomSongCard.module.scss'
 import { FC } from 'react'
 import Skeleton from 'react-loading-skeleton'
-
-import styles from './CustomSongCard.module.scss'
 
 const CustomSkeletonCard: FC = () => {
 	return (

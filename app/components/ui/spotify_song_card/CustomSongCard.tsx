@@ -1,8 +1,7 @@
+import styles from '@/scss/CustomSongCard.module.scss'
 import { IFoollowedArtists } from '@/types/IFollowedArtists'
 import { FC } from 'react'
 import { GrPlayFill } from 'react-icons/gr'
-
-import styles from './CustomSongCard.module.scss'
 
 const CustomSongCard: FC<IFoollowedArtists> = ({
 	name,
