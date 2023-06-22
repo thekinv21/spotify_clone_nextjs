@@ -1,3 +1,4 @@
+import styles from '@/scss/Login.module.scss'
 import Head from 'next/head'
 import Image from 'next/image'
 import { FC } from 'react'
@@ -5,7 +6,6 @@ import { toast } from 'react-toastify'
 
 import CustomButton from '@/ui/spotify_custom_button/CustomButton'
 
-import styles from './Login.module.scss'
 import LoginForm from './login_form/LoginForm'
 
 const Login: FC = () => {

@@ -1,7 +1,7 @@
+import styles from '@/scss/Login.module.scss'
 import Link from 'next/link'
 import { FC } from 'react'
 
-import styles from '../Login.module.scss'
 import { useLoginForm } from './useLoginForm'
 
 const LoginForm: FC = () => {
