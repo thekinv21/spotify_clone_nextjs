@@ -29,7 +29,8 @@
 			"@/api/*": ["./app/api/*"],
 			"@/provider/*": ["./app/provider/*"],
 			"@/config/*": ["./app/config/*"],
-			"@/store/*": ["./app/store/*"]
+			"@/store/*": ["./app/store/*"],
+			"@/scss/*": ["./app/scss/*"]
 		},
 		"plugins": [
 			{
