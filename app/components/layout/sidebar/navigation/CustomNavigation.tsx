@@ -1,6 +1,5 @@
+import styles from '@/scss/CustomSidebar.module.scss'
 import React, { FC } from 'react'
-
-import styles from '../CustomSidebar.module.scss'
 
 interface INavigationProps {
 	children: React.ReactNode

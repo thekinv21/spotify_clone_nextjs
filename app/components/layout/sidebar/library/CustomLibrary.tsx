@@ -1,9 +1,9 @@
+import styles from '@/scss/CustomSidebar.module.scss'
 import { FC } from 'react'
 import { AiOutlinePlus } from 'react-icons/ai'
 import { TbPlaylist } from 'react-icons/tb'
 import { toast } from 'react-toastify'
 
-import styles from '../CustomSidebar.module.scss'
 import CreatePlaylistForm from './components/create-playlist-library/CreatePlaylistForm'
 import CustomFollowItem from './components/custom-playlist-item/CustomFollowItem'
 import CustomPlaylistItem from './components/custom-playlist-item/CustomPlaylistItem'

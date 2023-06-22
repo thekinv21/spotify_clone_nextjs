@@ -1,8 +1,7 @@
+import styles from '@/scss/CustomSidebar.module.scss'
 import { IPlaylist } from '@/types/IPlaylist'
 import Image from 'next/image'
 import { FC } from 'react'
-
-import styles from '../../../CustomSidebar.module.scss'
 
 const CustomPlaylistItem: FC<IPlaylist> = ({
 	tracks,

@@ -1,6 +1,6 @@
+import styles from '@/scss/CustomSidebar.module.scss'
 import { FC } from 'react'
 
-import styles from './CustomSidebar.module.scss'
 import CustomLibrary from './library/CustomLibrary'
 import CustomNavigation from './navigation/CustomNavigation'
 import CustomNavigationItem from './navigation/CustomNavigationItem'

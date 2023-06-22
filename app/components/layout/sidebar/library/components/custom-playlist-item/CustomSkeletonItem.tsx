@@ -1,7 +1,6 @@
+import styles from '@/scss/CustomSidebar.module.scss'
 import { FC } from 'react'
 import Skeleton from 'react-loading-skeleton'
-
-import styles from '../../../CustomSidebar.module.scss'
 
 const CustomSkeletonItem: FC = () => {
 	return (

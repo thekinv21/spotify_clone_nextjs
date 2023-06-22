@@ -1,7 +1,7 @@
+import styles from '@/scss/CustomSidebar.module.scss'
 import { Card, Dialog } from '@material-tailwind/react'
 import { FC } from 'react'
 
-import styles from '../../../CustomSidebar.module.scss'
 import { useCreatePlaylistForm } from './useCreatePlaylistForm'
 
 interface ICreateForm {

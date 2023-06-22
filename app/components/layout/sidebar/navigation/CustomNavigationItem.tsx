@@ -1,8 +1,7 @@
+import styles from '@/scss/CustomSidebar.module.scss'
 import Link from 'next/link'
 import { FC } from 'react'
 import { IconType } from 'react-icons'
-
-import styles from '../CustomSidebar.module.scss'
 
 interface ICustomNavigationItem {
 	icon: IconType

@@ -1,8 +1,7 @@
+import styles from '@/scss/CustomSidebar.module.scss'
 import { IFoollowedArtists } from '@/types/IFollowedArtists'
 import Image from 'next/image'
 import { FC } from 'react'
-
-import styles from '../../../CustomSidebar.module.scss'
 
 const CustomFollowItem: FC<IFoollowedArtists> = ({ images, name, type }) => {
 	return (
