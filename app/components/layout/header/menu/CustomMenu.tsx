@@ -1,11 +1,11 @@
 import { menuLinks } from '@/constants/links'
+import styles from '@/scss/CustomHeader.module.scss'
 import { Menu, MenuHandler, MenuList } from '@material-tailwind/react'
 import { signOut, useSession } from 'next-auth/react'
 import { useRouter } from 'next/navigation'
 import { FC } from 'react'
 import { SlUser } from 'react-icons/sl'
 
-import styles from '../CustomHeader.module.scss'
 import CustomMenuLink from './CustomMenuLink'
 
 const CustomMenu: FC = () => {

@@ -1,10 +1,10 @@
+import styles from '@/scss/CustomHeader.module.scss'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { Drawer } from '@material-tailwind/react'
 import Image from 'next/image'
 import { FC, useState } from 'react'
 import { LuUsers } from 'react-icons/lu'
 
-import styles from '../CustomHeader.module.scss'
 import CustomDrawerContent from './CustomDrawerContent'
 
 const CustomDrawer: FC = () => {

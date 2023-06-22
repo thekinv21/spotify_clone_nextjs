@@ -1,9 +1,8 @@
+import styles from '@/scss/CustomHeader.module.scss'
 import { FC } from 'react'
 import { SlUser } from 'react-icons/sl'
 
 import CustomButton from '@/ui/spotify_custom_button/CustomButton'
-
-import styles from '../CustomHeader.module.scss'
 
 const Sceletion = () => {
 	return (
