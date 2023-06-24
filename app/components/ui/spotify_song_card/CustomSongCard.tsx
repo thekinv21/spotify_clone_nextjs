@@ -1,14 +1,9 @@
 import styles from '@/scss/CustomSongCard.module.scss'
-import { IFoollowedArtists } from '@/types/IFollowedArtists'
+import { IPlaylist } from '@/types/IPlaylist'
 import { FC } from 'react'
 import { GrPlayFill } from 'react-icons/gr'
 
-const CustomSongCard: FC<IFoollowedArtists> = ({
-	name,
-	images,
-	type,
-	popularity
-}) => {
+const CustomSongCard: FC<IPlaylist> = ({ name, images, type, tracks }) => {
 	const handleClick = () => {}
 
 	return (
@@ -27,7 +22,7 @@ const CustomSongCard: FC<IFoollowedArtists> = ({
 						<h2>{name}</h2>
 						<div>
 							<p>{type.toUpperCase()}</p>
-							<p>Popularity : {popularity ? popularity : 'Belirsiz'}</p>
+							<p>Müzik : {tracks ? tracks.total : 'Belirsiz'}</p>
 						</div>
 					</div>
 
