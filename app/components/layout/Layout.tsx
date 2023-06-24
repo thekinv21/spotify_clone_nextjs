@@ -16,14 +16,17 @@ const Layout: FC<PropsWithChildren<IMeta>> = ({
 	return (
 		<Meta title={title} description={description}>
 			<section className={styles.container}>
-				<section className={styles.content}>
+				<main className={styles.content}>
 					<CustomSidebar>{children}</CustomSidebar>
 
 					<section className={styles.main}>
 						<CustomHeader />
 						<main className={styles.main_content}>{children}</main>
 					</section>
-				</section>
+				</main>
+				<footer>
+					<CustomFooter />
+				</footer>
 			</section>
 			<CustomFooter />
 		</Meta>
