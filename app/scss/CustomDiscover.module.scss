@@ -47,7 +47,7 @@
 @include tablet {
 	/* Tablet için stil tanımı */
 	.playlist_items {
-		@apply grid-cols-3 place-items-center;
+		@apply grid-cols-3 place-items-center gap-x-8;
 	}
 }
 
@@ -55,7 +55,7 @@
 @include laptop {
 	/* Laptop için stil tanımı */
 	.playlist_items {
-		@apply grid-cols-4 place-items-center gap-x-2;
+		@apply grid-cols-4 place-items-center gap-x-8;
 	}
 }
 
@@ -63,7 +63,7 @@
 @include desktop {
 	/* Masaüstü için stil tanımı */
 	.playlist_items {
-		@apply grid-cols-5 place-items-center gap-x-5;
+		@apply grid-cols-5 place-items-center gap-x-6;
 	}
 }
 

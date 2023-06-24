@@ -1,5 +1,5 @@
 .container {
-	@apply max-h-[100vh] max-w-[100vw] grid-rows-[85vh,15vh] overflow-hidden bg-dark-black text-white;
+	@apply max-h-[100vh] min-w-[768px] max-w-[100vw] grid-rows-[85vh,15vh] overflow-hidden bg-dark-black text-white;
 }
 
 .content {

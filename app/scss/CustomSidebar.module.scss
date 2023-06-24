@@ -7,7 +7,7 @@
 
 /* İçerik konteyneri */
 .content {
-	@apply mb-40 hidden h-full w-[300px] flex-col gap-y-2 bg-dark-black p-2;
+	@apply h-full w-[300px] flex-col gap-y-2 bg-dark-black p-2;
 }
 
 //? NAVİGATİON COMPONENT STYLES start
@@ -156,26 +156,8 @@
 	}
 }
 
-//============ MOBİLE İÇİN =========
-@include phone {
-	/* Mobil için stil tanımları */
-}
-
-//============ TABLET İÇİN =========
-@include tablet {
-	/* Tablet için stil tanımları */
-	.content {
-		@apply flex transition-all duration-500;
-	}
-}
-
 //============ LAPTOP İÇİN =========
 @include laptop {
-	/* Tablet için stil tanımları */
-	.content {
-		@apply flex transition-all duration-500;
-	}
-
 	.libraryMusicList {
 		@apply h-screen;
 	}
