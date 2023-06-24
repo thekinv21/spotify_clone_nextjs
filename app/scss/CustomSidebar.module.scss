@@ -2,12 +2,12 @@
 
 /* Ana konteyner */
 .container {
-	@apply flex h-full;
+	@apply flex h-[100vh];
 }
 
 /* İçerik konteyneri */
 .content {
-	@apply hidden w-[300px] flex-col gap-y-2 bg-dark-black p-2;
+	@apply mb-40 hidden h-full w-[300px] flex-col gap-y-2 bg-dark-black p-2;
 }
 
 //? NAVİGATİON COMPONENT STYLES start
@@ -67,7 +67,7 @@
 
 /* Müzik listesi */
 .libraryMusicList {
-	@apply mt-5 flex flex-col gap-y-4 px-4 text-sm;
+	@apply mt-5 flex h-full flex-col gap-y-4 px-4  text-sm;
 }
 
 //? ===================LİBRARY COMPONENT STYLES end=============
@@ -166,5 +166,17 @@
 	/* Tablet için stil tanımları */
 	.content {
 		@apply flex transition-all duration-500;
+	}
+}
+
+//============ LAPTOP İÇİN =========
+@include laptop {
+	/* Tablet için stil tanımları */
+	.content {
+		@apply flex transition-all duration-500;
+	}
+
+	.libraryMusicList {
+		@apply h-screen;
 	}
 }
