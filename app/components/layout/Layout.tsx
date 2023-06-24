@@ -28,7 +28,6 @@ const Layout: FC<PropsWithChildren<IMeta>> = ({
 					<CustomFooter />
 				</footer>
 			</section>
-			<CustomFooter />
 		</Meta>
 	)
 }
