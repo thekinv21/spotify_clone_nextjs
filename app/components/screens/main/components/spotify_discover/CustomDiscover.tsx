@@ -9,7 +9,6 @@ const CustomDiscover: FC = () => {
 	const {
 		topPlaylist,
 		popPlaylist,
-		followeds,
 		fitnessPlaylist,
 		myPlaylist,
 		dansPlaylist

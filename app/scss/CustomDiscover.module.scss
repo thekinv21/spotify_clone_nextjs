@@ -47,7 +47,7 @@
 @include tablet {
 	/* Tablet için stil tanımı */
 	.playlist_items {
-		@apply grid-cols-2 place-items-center;
+		@apply grid-cols-3 place-items-center;
 	}
 }
 
