@@ -18,7 +18,7 @@ const CustomSongCard: FC<IFoollowedArtists> = ({
 					<div className={styles.music_image_holder}>
 						<img
 							draggable={false}
-							src={images ? images[0].url : '/miyagi.jpeg'}
+							src={images?.length ? images[0].url : '/playlist_image.png'}
 							alt='music mage'
 							className={styles.image}
 						/>
@@ -27,7 +27,7 @@ const CustomSongCard: FC<IFoollowedArtists> = ({
 						<h2>{name}</h2>
 						<div>
 							<p>{type.toUpperCase()}</p>
-							<p>Popularity : {popularity}</p>
+							<p>Popularity : {popularity ? popularity : 'Belirsiz'}</p>
 						</div>
 					</div>
 
