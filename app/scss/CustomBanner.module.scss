@@ -1,6 +1,5 @@
 @import '@/styles/responsive.scss';
 
-// spotify banner styles start
 .mainBanner {
 	@apply w-full;
 
@@ -30,7 +29,7 @@
 }
 
 .title {
-	@apply truncate py-5  text-sm font-medium text-white;
+	@apply truncate py-5  text-[14px] font-medium text-white;
 }
 
 .circle {

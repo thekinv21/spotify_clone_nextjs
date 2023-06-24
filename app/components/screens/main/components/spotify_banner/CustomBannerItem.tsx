@@ -1,9 +1,8 @@
+import styles from '@/scss/CustomBanner.module.scss'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import { FC } from 'react'
 import { GrPlayFill } from 'react-icons/gr'
-
-import styles from './CustomBanner.module.scss'
 
 interface ICustomBannerItem {
 	image: string

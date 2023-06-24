@@ -1,29 +1,38 @@
+import styles from '@/scss/CustomBanner.module.scss'
+import { useSession } from 'next-auth/react'
 import { FC } from 'react'
 
-import styles from './CustomBanner.module.scss'
 import CustomBannerItem from './CustomBannerItem'
+import CustomBannerSkeleton from './CustomBannerSkeleton'
 
 const CustomBanner: FC = () => {
+	const { data: session } = useSession()
+
 	return (
 		<div className={styles.mainBanner}>
-			<h1>Spotify'a Hoşgeldiniz..</h1>
+			{session ? (
+				<h1>{session.user?.name} &#128293;</h1>
+			) : (
+				<h1>Spotify'a Hoşgeldiniz..</h1>
+			)}
 
-			<div className={styles.mainBanner_grid_container}>
-				<CustomBannerItem
-					image={`/liked.png`}
-					url='/'
-					name='Beğenilen Şarkilar..'
-				/>
+			{session ? (
+				<div className={styles.mainBanner_grid_container}>
+					<CustomBannerItem
+						image={`/liked.png`}
+						url='/'
+						name='Beğenen Şarkilarim'
+					/>
 
-				<CustomBannerItem
-					image={`/miyagi.jpeg`}
-					url='/'
-					name='MiyaGi / Endspiel'
-				/>
+					<CustomBannerItem image={`/saved.png`} url='/' name='Bölümlerim' />
+				</div>
+			) : (
+				<div className={styles.mainBanner_grid_container}>
+					<CustomBannerSkeleton />
 
-				<CustomBannerItem image={`/scrip.jpg`} url='/' name='Scriptonit' />
-				<CustomBannerItem image={`/wee.png`} url='/' name='The Weekend..' />
-			</div>
+					<CustomBannerSkeleton />
+				</div>
+			)}
 		</div>
 	)
 }
