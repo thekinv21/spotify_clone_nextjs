@@ -20,7 +20,7 @@ const CustomLibrary: FC<ILibraryProps> = ({ children }) => {
 		toast.success('Şarki Ekleyiniz!')
 	}
 
-	const { playlist, followeds, open, handleOpen } = useCustomLibrary()
+	const { myPlaylist, followeds, open, handleOpen } = useCustomLibrary()
 
 	return (
 		<section className={styles.library_container}>
@@ -41,8 +41,8 @@ const CustomLibrary: FC<ILibraryProps> = ({ children }) => {
 					<CreatePlaylistForm open={open} handleOpen={handleOpen} />
 				</div>
 				<section className={styles.libraryMusicList}>
-					{playlist.length ? (
-						playlist.map((item, idx: number) => (
+					{myPlaylist.length ? (
+						myPlaylist.map((item, idx: number) => (
 							<CustomPlaylistItem key={idx} {...item} />
 						))
 					) : (
