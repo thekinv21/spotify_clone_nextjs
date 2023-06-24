@@ -3,15 +3,23 @@ import { IPlaylist } from '@/types/IPlaylist'
 import { createSlice } from '@reduxjs/toolkit'
 
 interface IPlaylistState {
-	playlist: IPlaylist[] | []
 	followeds: IFoollowedArtists[] | []
+	topPlaylist: IPlaylist[] | []
+	popPlaylist: IPlaylist[] | []
+	myPlaylist: IPlaylist[] | []
+	fitnessPlaylist: IPlaylist[] | []
+	dansPlaylist: IPlaylist[] | []
 	selectedPlaylistId: string | null
 	selectedPlaylist: any | null
 }
 
 const initialState: IPlaylistState = {
-	playlist: [],
 	followeds: [],
+	topPlaylist: [],
+	popPlaylist: [],
+	myPlaylist: [],
+	fitnessPlaylist: [],
+	dansPlaylist: [],
 	selectedPlaylistId: null,
 	selectedPlaylist: null
 }
@@ -21,15 +29,38 @@ export const playlistSlice = createSlice({
 	initialState,
 
 	reducers: {
-		setPlaylist: (state, action) => {
-			state.playlist = action.payload
+		setByFitness: (state, action) => {
+			state.fitnessPlaylist = action.payload
 		},
-		setFolloweds: (state, action) => {
+
+		setByMyPlaylist: (state, action) => {
+			state.myPlaylist = action.payload
+		},
+		setByTop: (state, action) => {
+			state.topPlaylist = action.payload
+		},
+
+		setByPop: (state, action) => {
+			state.popPlaylist = action.payload
+		},
+
+		setByDans: (state, action) => {
+			state.dansPlaylist = action.payload
+		},
+
+		setByFolloweds: (state, action) => {
 			state.followeds = action.payload
 		}
 	}
 })
 
-export const { setPlaylist, setFolloweds } = playlistSlice.actions
+export const {
+	setByTop,
+	setByPop,
+	setByFolloweds,
+	setByFitness,
+	setByMyPlaylist,
+	setByDans
+} = playlistSlice.actions
 
 export default playlistSlice.reducer
