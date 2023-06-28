@@ -42,6 +42,7 @@ export const apiCall = () => {
 	const dansPlaylist = useSelector(
 		(state: RootState) => state.playlists.dansPlaylist
 	)
+
 	useEffect(() => {
 		//* TOP CHARTS PLAYLİSTLER
 
@@ -112,7 +113,7 @@ export const apiCall = () => {
 			getByFitness()
 			getByDans()
 		}
-	}, [session])
+	}, [session, spotifyApi])
 
 	return {
 		topPlaylist,
