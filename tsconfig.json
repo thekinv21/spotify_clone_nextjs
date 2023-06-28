@@ -30,7 +30,8 @@
 			"@/provider/*": ["./app/provider/*"],
 			"@/config/*": ["./app/config/*"],
 			"@/store/*": ["./app/store/*"],
-			"@/scss/*": ["./app/scss/*"]
+			"@/scss/*": ["./app/scss/*"],
+			"@/atoms/*": ["./app/atoms/*"]
 		},
 		"plugins": [
 			{
