@@ -1,0 +1,116 @@
+@import '@/styles/responsive.scss';
+
+.header {
+	@apply sticky left-0 top-0 z-50 h-fit bg-gradient-to-b from-indigo p-8;
+}
+
+.header_content {
+	@apply mb-4 flex w-full items-center justify-between;
+}
+
+.header_item {
+	@apply hidden items-center gap-x-2;
+}
+
+.header_icon_button {
+	@apply flex items-center justify-center rounded-full bg-black transition-all duration-500 ease-out hover:bg-gray;
+}
+
+.header_mobile_icon {
+	@apply flex items-center gap-x-2;
+}
+
+.home_icon_button {
+	@apply items-center justify-center rounded-full bg-white p-2 text-black transition-all duration-300 ease-out hover:opacity-80;
+}
+
+.defaultFlex {
+	@apply flex items-center justify-between gap-x-8;
+}
+
+.premium_button {
+	@apply rounded-2xl bg-white px-4 py-2 text-xs font-semibold text-black transition duration-300 hover:scale-105 hover:opacity-90;
+}
+
+.header_user_icon_button {
+	@apply mr-3 items-center justify-center rounded-full bg-black p-2 text-white transition-all duration-300 ease-in hover:scale-90 hover:bg-white hover:text-black;
+}
+
+// ===================header styles end=====================
+
+// header menu styles start
+.menuList {
+	@apply rounded-lg border-0 bg-black py-3 text-white;
+}
+
+.header_children {
+	@apply py-10;
+}
+
+.header_button {
+	@apply mt-5 flex w-full items-center justify-center truncate rounded-xl border-none px-6 py-2  font-body text-xs outline-none;
+
+	&:hover {
+		@apply bg-dark-black  transition duration-300 ease-in;
+	}
+}
+
+// ==================header menu styles end================
+
+// drawwer styles start...
+
+.drawer {
+	@apply bg-dark-black p-6 text-white shadow-2xl;
+}
+.user_icon_button {
+	@apply mr-3 items-center justify-center rounded-full bg-black p-2 text-white transition-all duration-300 ease-in hover:scale-90 hover:bg-white hover:text-black;
+}
+
+.drawer_content {
+	@apply mb-6 flex items-center justify-between;
+}
+
+.close_icon {
+	@apply h-7 w-7 cursor-pointer object-contain;
+}
+
+.content {
+	@apply mt-16 flex flex-col items-center justify-center gap-y-4;
+}
+
+.content_description {
+	@apply mb-3 mt-5 w-full space-x-2 text-start text-xs text-gray;
+}
+
+.user_icon {
+	@apply items-center justify-center rounded-full bg-black p-4 text-white transition-all duration-300 ease-in;
+}
+
+.user_sceletion_container {
+	@apply flex w-full items-center justify-start gap-x-1;
+}
+
+.sceletion {
+	@apply ml-3 flex w-full gap-4;
+}
+
+.setting_button {
+	@apply rounded-2xl bg-white px-8 py-2 text-sm  text-black transition duration-300 hover:scale-105 hover:opacity-90;
+}
+
+//======================= drawwer styles end.====================
+
+//============MOBİLE İÇİN========
+@include phone {
+}
+
+//============TABLET İÇİN========
+@include tablet {
+	.header_item {
+		@apply flex;
+	}
+
+	.header_mobile_icon {
+		@apply hidden;
+	}
+}

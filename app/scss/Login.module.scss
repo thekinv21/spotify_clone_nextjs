@@ -1,0 +1,73 @@
+.container {
+	@apply flex h-screen w-screen items-center justify-center bg-black text-white;
+}
+
+.login_content {
+	@apply flex  h-screen w-full flex-col items-center justify-start py-16;
+}
+
+.login_top {
+	@apply flex flex-col items-center justify-center gap-10;
+}
+
+.withFacebook {
+	@apply w-96 rounded-full bg-blue-800 px-12 py-2 text-xs uppercase text-white;
+}
+
+.withGoogle {
+	@apply w-96 rounded-full bg-blue-gray-50 px-12 py-2 text-xs uppercase text-black;
+}
+
+.with {
+	@apply flex h-4 w-full items-center gap-10;
+
+	> span {
+		@apply text-xs uppercase text-gray;
+	}
+}
+
+.minus {
+	@apply w-full border border-solid border-blue-gray-300;
+}
+
+// forrm styles start
+
+.form {
+	@apply mt-10 flex flex-col items-center justify-center gap-5;
+}
+
+.title {
+	@apply text-xl font-semibold uppercase tracking-widest;
+}
+
+.form_item {
+	@apply flex flex-col items-start gap-2;
+
+	> label {
+		@apply text-xs uppercase;
+	}
+
+	> input {
+		@apply h-11 w-96 truncate rounded-lg border-none bg-dark-black pl-5 text-xs text-white outline-none;
+	}
+
+	> button {
+		@apply mt-2 w-96 rounded-full bg-light-green-700 px-12 py-2 text-xs font-semibold uppercase text-white;
+
+		&:hover {
+			@apply bg-green transition-all duration-200 ease-in;
+		}
+	}
+
+	> p {
+		@apply text-xs text-gray;
+	}
+}
+
+.link {
+	@apply flex items-center justify-center  uppercase tracking-widest text-gray;
+
+	&:hover {
+		@apply border-b-2 border-gray transition-all duration-300;
+	}
+}

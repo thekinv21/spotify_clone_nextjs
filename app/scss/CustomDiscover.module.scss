@@ -1,0 +1,75 @@
+@import '@/styles/responsive.scss';
+
+/* Playlist konteyneri */
+.playlist_container {
+	@apply mt-10 flex flex-col justify-center gap-10;
+}
+
+/* Playlist içeriği */
+.playlist_content {
+	@apply flex flex-col justify-center gap-6;
+}
+
+/* Playlist üst başlık */
+.playlist_top_header {
+	@apply flex flex-row items-center justify-between;
+}
+
+/* Playlist bağlantısı */
+.playlist_link {
+	@apply truncate text-2xl font-semibold;
+}
+
+/* "Tümünü Göster" bağlantısı */
+.showAll {
+	@apply text-xs text-gray;
+
+	/* Hover etkisi */
+	&:hover {
+		@apply border-b-2 border-gray transition duration-100 ease-in-out;
+	}
+}
+
+/* Playlist öğeleri */
+.playlist_items {
+	@apply grid grid-cols-6;
+}
+
+//============MOBİL İÇİN========
+@include phone {
+	/* Mobil için stil tanımı */
+	.playlist_items {
+		@apply grid-cols-2 place-items-center gap-3;
+	}
+}
+
+//============TABLET İÇİN========
+@include tablet {
+	/* Tablet için stil tanımı */
+	.playlist_items {
+		@apply grid-cols-3 place-items-center gap-x-8;
+	}
+}
+
+//============LAPTOP İÇİN========
+@include laptop {
+	/* Laptop için stil tanımı */
+	.playlist_items {
+		@apply grid-cols-4 place-items-center gap-x-8;
+	}
+}
+
+//============DESKTOP İÇİN========
+@include desktop {
+	/* Masaüstü için stil tanımı */
+	.playlist_items {
+		@apply grid-cols-5 place-items-center gap-x-6;
+	}
+}
+
+@include desktopL {
+	/* Büyük ekranlı masaüstü için stil tanımı */
+	.playlist_items {
+		@apply grid-cols-6 place-items-center gap-x-6;
+	}
+}

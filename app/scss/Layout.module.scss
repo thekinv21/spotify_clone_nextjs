@@ -1,0 +1,15 @@
+.container {
+	@apply max-h-[100vh] min-w-[768px] max-w-[100vw] grid-rows-[85vh,15vh] overflow-hidden bg-dark-black text-white;
+}
+
+.content {
+	@apply flex h-full w-full items-center justify-center;
+}
+
+.main {
+	@apply h-screen w-full overflow-hidden overflow-y-auto rounded-lg bg-black pb-10;
+}
+
+.main_content {
+	@apply mb-10 px-5 py-5;
+}
