@@ -9,8 +9,7 @@ interface IPlaylistState {
 	myPlaylist: IPlaylist[] | []
 	fitnessPlaylist: IPlaylist[] | []
 	dansPlaylist: IPlaylist[] | []
-	selectedPlaylistId: string | null
-	selectedPlaylist: any | null
+	selectedPlaylist: IPlaylist | null
 }
 
 const initialState: IPlaylistState = {
@@ -20,7 +19,6 @@ const initialState: IPlaylistState = {
 	myPlaylist: [],
 	fitnessPlaylist: [],
 	dansPlaylist: [],
-	selectedPlaylistId: null,
 	selectedPlaylist: null
 }
 

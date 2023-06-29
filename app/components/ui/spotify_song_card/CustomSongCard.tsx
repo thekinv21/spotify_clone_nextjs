@@ -3,9 +3,7 @@ import { IPlaylist } from '@/types/IPlaylist'
 import { FC } from 'react'
 import { GrPlayFill } from 'react-icons/gr'
 
-const CustomSongCard: FC<IPlaylist> = ({ name, images, type, tracks }) => {
-	const handleClick = () => {}
-
+const CustomSongCard: FC<IPlaylist> = ({ name, images, type, tracks, id }) => {
 	return (
 		<section>
 			<div className={styles.content}>
@@ -27,7 +25,7 @@ const CustomSongCard: FC<IPlaylist> = ({ name, images, type, tracks }) => {
 					</div>
 
 					<div className={styles.play_icon}>
-						<button onClick={handleClick} className={styles.circle}>
+						<button className={styles.circle}>
 							<GrPlayFill size={25} />
 						</button>
 					</div>

@@ -33,7 +33,10 @@ const CustomDrawer: FC = () => {
 						className='object-contain'
 						draggable={false}
 						priority
-						sizes='(max-width: 768px) 100%, (max-width: 1200px) 100%, 100%'
+						style={{
+							width: '100%',
+							height: 'auto'
+						}}
 					/>
 
 					<XMarkIcon

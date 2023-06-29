@@ -5,8 +5,8 @@ import { TbPlaylist } from 'react-icons/tb'
 import { toast } from 'react-toastify'
 
 import CreatePlaylistForm from './components/create-playlist-library/CreatePlaylistForm'
-import CustomFollowItem from './components/custom-playlist-item/CustomFollowItem'
-import CustomPlaylistItem from './components/custom-playlist-item/CustomPlaylistItem'
+import ArtistPlaylistItem from './components/custom-playlist-item/ArtistPlaylistItem'
+import CollectionPlaylistItem from './components/custom-playlist-item/CollectionPlaylistItem'
 import CustomSkeletonItem from './components/custom-playlist-item/CustomSkeletonItem'
 import { useCustomLibrary } from './useCustomLibrary'
 
@@ -43,7 +43,7 @@ const CustomLibrary: FC<ILibraryProps> = ({ children }) => {
 				<section className={styles.libraryMusicList}>
 					{myPlaylist.length ? (
 						myPlaylist.map((item, idx: number) => (
-							<CustomPlaylistItem key={idx} {...item} />
+							<CollectionPlaylistItem key={idx} {...item} />
 						))
 					) : (
 						<CustomSkeletonItem />
@@ -51,7 +51,7 @@ const CustomLibrary: FC<ILibraryProps> = ({ children }) => {
 
 					{followeds.length ? (
 						followeds.map((item, idx: number) => (
-							<CustomFollowItem key={idx} {...item} />
+							<ArtistPlaylistItem key={idx} {...item} />
 						))
 					) : (
 						<CustomSkeletonItem />

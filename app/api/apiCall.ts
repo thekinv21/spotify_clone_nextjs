@@ -113,7 +113,7 @@ export const apiCall = () => {
 			getByFitness()
 			getByDans()
 		}
-	}, [session, spotifyApi])
+	}, [session])
 
 	return {
 		topPlaylist,

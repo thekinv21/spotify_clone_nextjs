@@ -109,14 +109,14 @@
 // create playlist form styles start
 
 .modal {
-	@apply bg-black  text-white shadow-none;
+	@apply overflow-hidden bg-black py-10 text-white shadow-none;
 }
 
 .modal_card {
 	@apply mx-auto w-full bg-transparent text-xs;
 
 	> h3 {
-		@apply mt-5  text-center text-xl uppercase text-white;
+		@apply mt-5 text-center text-xl uppercase text-white;
 	}
 }
 
@@ -160,5 +160,9 @@
 @include laptop {
 	.libraryMusicList {
 		@apply h-screen;
+	}
+
+	.modal {
+		@apply px-10;
 	}
 }
